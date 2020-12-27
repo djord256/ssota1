@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SOTTa</string>
+    <string name="pre_order_now">PRE-ORDER NOW</string>
+    <string name="size">size</string>
+    <string name="weight">weight</string>
+    <string name="speed">Speed</string>
+    <string name="classic_bike">Classic Bike</string>
+    <string name="ugx_20_000">Ugx. 20,000</string>
+    <string name="todo">TODO</string>
+    <string name="get_started">GET STARTED</string>
+
+</resources>
