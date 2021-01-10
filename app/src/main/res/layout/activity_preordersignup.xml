@@ -143,19 +143,20 @@
     </LinearLayout>
 
     <Button
-        android:padding="8dp"
+        android:id="@+id/btnpersonalDetailsNxt"
+        android:layout_width="99dp"
+        android:layout_height="45dp"
         android:backgroundTint="@color/black"
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:padding="8dp"
         android:text="Next"
+        android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Contact"
-        app:layout_constraintVertical_bias="0.561" />
+        app:layout_constraintVertical_bias="0.557" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

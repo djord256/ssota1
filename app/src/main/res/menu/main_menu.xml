@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+   <item
+   android:id="@+id/nav_Prof"
+       android:title="Profile"
+       android:icon="@drawable/profile"
+    />
+    <item
+        android:id="@+id/nav_SubPlans"
+        android:title="Subscription Plans"
+        android:icon="@drawable/subcription"
+        />
+    <item
+        android:id="@+id/nav_Notifications"
+        android:title="Notifications"
+        android:icon="@drawable/notifications"
+        />
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Account Settings"
+        android:icon="@drawable/settings"
+        />
+    <item
+        android:id="@+id/nav_services"
+        android:title="Services"
+        android:icon="@drawable/services"
+        />
+    <item
+        android:id="@+id/nav_help"
+        android:title="Help"
+        android:icon="@drawable/help"
+        />
+    <item
+        android:id="@+id/nav_about"
+        android:title="About"
+        android:icon="@drawable/about"
+        />
+    <item
+        android:id="@+id/nav_privacy"
+        android:title="Privacy"
+        android:icon="@drawable/privacy"
+        />
+    <item
+        android:id="@+id/terms"
+        android:title="Terms and Conditions"
+        android:icon="@drawable/terms"
+        />
+
+</group>
+</menu>

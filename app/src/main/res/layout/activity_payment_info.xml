@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaymentInfo">
+    tools:context=".PaymentInfo"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
 
     <ImageView
         android:id="@+id/signuplogo"
@@ -45,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Payment Info"
+        android:text="Billing Info"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,32 +55,211 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/deliveryshipdate" />
 
-    <LinearLayout
-
-        android:id="@+id/homeAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:orientation="vertical"
+    <RelativeLayout
+        android:background="@drawable/paybg"
+        android:id="@+id/subplan"
         app:layout_constraintTop_toBottomOf="@id/txtdeliveryinfo"
-        tools:layout_editor_absoluteX="8dp">
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:padding="10dp"
+        android:elevation="20dp">
+        <TextView
+            android:id="@+id/txtsubscription_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Subscription Plan"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/imgclassic"
+            android:layout_marginTop="4dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/txtsubscription_plan"
+            android:src="@drawable/classic"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHANGE PLAN"
+            android:textColor="@color/sott"
+            android:layout_below="@+id/imgclassic"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:elevation="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/paybg"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/subplan"
+        android:id="@+id/relAmountDue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:text="Payment Method"
+            android:id="@+id/totaldue"
+            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Due Today"
+            />
 
-        <Spinner
-            android:id="@+id/paymentSpinner"
+        <TextView
+            android:layout_toRightOf="@+id/totaldue"
+            android:id="@+id/totaldueugx"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ugx: 20000"
+            android:layout_marginLeft="80dp"
+
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:padding="10dp"
+        android:background="@drawable/paybg"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/relAmountDue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="8dp"
+            android:background="@drawable/box_1"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/relcredicard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imgcreditcard"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/creditcard"
+                />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/txtcreditcard"
+                android:textColor="@color/black"
+                android:layout_below="@+id/imgcreditcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit Card"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="8dp"
+            android:background="@drawable/box_1"
+            android:layout_marginLeft="45dp"
+           android:layout_toEndOf="@+id/relcredicard"
+            android:id="@+id/relmobilemoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/relcredicard">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/mobilemoney"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_phone_android_24"
+                />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/txtmobile"
+                android:textColor="@color/black"
+                android:layout_below="@+id/mobilemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Money"/>
+        </RelativeLayout>
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/txtcardnumber"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_margin="4dp"
+            android:layout_below="@+id/relcredicard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Number"/>
+
+        <EditText
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:id="@+id/edtxtcardnumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/box_1"
-            android:padding="20dp" />
+            android:padding="10dp"
+            android:layout_below="@id/txtcardnumber"
+            android:background="@drawable/box_1"/>
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/txtexpiration"
+            android:layout_margin="4dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtxtcardnumber"
+            android:text="Expiration"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txtcvc"
+            android:layout_margin="4dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtxtcardnumber"
+
+            android:text="Cvc"/>
+        <TextView
+            android:gravity="end"
+           android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/txtcvc"
+            android:id="@+id/txtZipcode"
+            android:layout_margin="4dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtxtcardnumber"
+            android:text="ZipCode"/>
+        <EditText
+            android:layout_below="@+id/txtexpiration"
+            android:layout_width="80dp"
+            android:background="@drawable/box_1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtcvc"
+            android:layout_width="80dp"
+            android:background="@drawable/box_1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtZipcode"
+            android:layout_width="80dp"
+            android:background="@drawable/box_1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+
+
+
+    </RelativeLayout>
+
 
     <Button
         android:id="@+id/button4"

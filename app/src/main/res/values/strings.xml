@@ -4,9 +4,12 @@
     <string name="size">size</string>
     <string name="weight">weight</string>
     <string name="speed">Speed</string>
-    <string name="classic_bike">Classic Bike</string>
     <string name="ugx_20_000">Ugx. 20,000</string>
     <string name="todo">TODO</string>
     <string name="get_started">GET STARTED</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="weightT">Weight</string>
+    <string name="_10_7kg">10.7kg</string>
+    <string name="classic_bike">Classic Bike</string>
 
 </resources>
