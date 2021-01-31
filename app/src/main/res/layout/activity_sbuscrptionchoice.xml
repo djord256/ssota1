@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawerlayout"
     tools:context=".sbuscrptionchoice"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
@@ -18,7 +19,7 @@
        android:layout_gravity="start" />
 
 
-        <ScrollView
+    <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <androidx.constraintlayout.widget.ConstraintLayout

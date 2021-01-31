@@ -18,13 +18,15 @@ public class sbuscrptionchoice extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sbuscrptionchoice);
-        btnclassic = (Button) findViewById(R.id.btnclassic_pre_order);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout) ;
         btnclassic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),PaymentInfo.class);
+                Intent i = new Intent(getApplicationContext(),DeliveryInfo.class);
                 startActivity(i);
             }
         });
+
+
     }
 }

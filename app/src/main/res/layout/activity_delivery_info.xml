@@ -10,7 +10,7 @@
     tools:context=".DeliveryInfo">
 
     <ImageView
-        android:id="@+id/signuplogo"
+        android:id="@+id/deliverysignuplogo"
         android:layout_width="177dp"
         android:layout_height="86dp"
         android:layout_marginTop="4dp"
@@ -21,14 +21,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/pre"
+        android:id="@+id/deliverypre"
         android:textStyle="bold"
         android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signuplogo"
+        app:layout_constraintTop_toBottomOf="@id/deliverysignuplogo"
         android:text="Pre-Order Sign Up"/>
 
     <TextView
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pre"
+        app:layout_constraintTop_toBottomOf="@id/deliverypre"
         android:text="Product Ships on the 28th-03-2021"/>
 
     <TextView

@@ -11,5 +11,11 @@
     <string name="weightT">Weight</string>
     <string name="_10_7kg">10.7kg</string>
     <string name="classic_bike">Classic Bike</string>
+    <string name="pre_order_sign_up">Pre-Order Sign Up</string>
+    <string name="product_ships_on_the_28th_03_2021">Product Ships on the 28th-03-2021</string>
+    <string name="billing_info">Billing Info</string>
+    <string name="your_subscription_plan">Your Subscription Plan</string>
+    <string name="back">Back</string>
+    <string name="next">NEXT</string>
 
 </resources>

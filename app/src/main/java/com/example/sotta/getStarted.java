@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class lottiepage extends AppCompatActivity {
+public class getStarted extends AppCompatActivity {
     Button getStarted;
 
     @Override
@@ -19,7 +19,7 @@ public class lottiepage extends AppCompatActivity {
         getStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent getstarted = new Intent(getApplicationContext(),sbuscrptionchoice.class);
+                Intent getstarted = new Intent(getApplicationContext(),DeliveryInfo.class);
                 startActivity(getstarted);
             }
         });

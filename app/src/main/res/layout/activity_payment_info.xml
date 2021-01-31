@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PaymentInfo"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp">
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/signuplogo"
@@ -29,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signuplogo"
-        android:text="Pre-Order Sign Up"/>
+        android:text="@string/pre_order_sign_up"/>
 
     <TextView
         android:id="@+id/deliveryshipdate"
@@ -39,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pre"
-        android:text="Product Ships on the 28th-03-2021"/>
+        android:text="@string/product_ships_on_the_28th_03_2021"/>
 
     <TextView
         android:textStyle="bold"
@@ -47,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Billing Info"
+        android:text="@string/billing_info"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +55,8 @@
         app:layout_constraintTop_toBottomOf="@id/deliveryshipdate" />
 
     <RelativeLayout
-        android:background="@drawable/paybg"
+        android:layout_margin="16dp"
+        android:background="@color/white"
         android:id="@+id/subplan"
         app:layout_constraintTop_toBottomOf="@id/txtdeliveryinfo"
         android:layout_width="match_parent"
@@ -67,7 +67,7 @@
             android:id="@+id/txtsubscription_plan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your Subscription Plan"
+            android:text="@string/your_subscription_plan"
             android:textStyle="bold"
             android:textColor="@color/black"/>
 
@@ -88,6 +88,7 @@
 
     </RelativeLayout>
     <RelativeLayout
+        android:layout_margin="16dp"
         android:elevation="5dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/paybg"
@@ -120,9 +121,10 @@
 
     </RelativeLayout>
     <RelativeLayout
-
+        android:elevation="20dp"
+        android:layout_margin="16dp"
         android:padding="10dp"
-        android:background="@drawable/paybg"
+        android:background="@color/white"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@+id/relAmountDue"
         android:layout_width="match_parent"
@@ -238,7 +240,8 @@
             android:layout_width="80dp"
             android:background="@drawable/box_1"
             android:layout_height="wrap_content"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:inputType="date" />
 
         <EditText
             android:layout_centerHorizontal="true"
@@ -246,7 +249,9 @@
             android:layout_width="80dp"
             android:background="@drawable/box_1"
             android:layout_height="wrap_content"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:inputType="number"
+            />
 
         <EditText
             android:layout_alignParentRight="true"
@@ -270,7 +275,7 @@
         android:layout_marginLeft="8dp"
         android:background="@color/soot1"
 
-        android:text="Back"
+        android:text="@string/back"
         android:textColor="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="@+id/button5"
         app:layout_constraintStart_toStartOf="parent"
@@ -286,7 +291,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="96dp"
         android:background="@color/black"
-        android:text="NEXT"
+        android:text="@string/next"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

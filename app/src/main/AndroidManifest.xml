@@ -9,19 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SOTTa">
-        <activity android:name=".PaymentInfo"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".DeliveryInfo"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".preordersignup"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".lottiepage"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivity2"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".sbuscrptionchoice"
+        <activity android:name=".home"></activity>
+        <activity android:name=".DeliveryInfo" />
+        <activity
+            android:name=".PaymentInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sbuscrptionchoice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".getStarted"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity2"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
